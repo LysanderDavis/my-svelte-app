@@ -6,7 +6,7 @@
 
 <style>
   h1 {
-    font-size: 10em;
+    font-size: 5em;
     color: blueviolet;
   }
 </style>
