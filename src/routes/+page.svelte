@@ -1,18 +1,16 @@
 <script lang="ts">
   import Nested from "./Nested.svelte";
 
-  let numbers = $state([1, 2, 3, 4]);
-  let total = $derived(numbers.reduce((t, n) => t + n, 0));
-  let sum = $derived(numbers.reduce((t, n) => t + n, 0) );
-  function addNumber() {
-    numbers.push(numbers.length + 1);
+  let inputValue = ""; // Variable to store input value
+
+  function handleSubmit() {
+    if (inputValue === "5") {
+      alert("You are an idiot!");
+    }
   }
 </script>
 
-<p>{numbers.join(' + ')} = {total}</p>
-
-<button onclick={addNumber}>
-  Add a number
-</button>
+<input type="text" bind:value={inputValue} placeholder="Enter a number" />
+<button on:click={handleSubmit}>Submit</button>
 
 <Nested />
