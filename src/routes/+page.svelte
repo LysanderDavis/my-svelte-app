@@ -5,7 +5,9 @@
 
   function handleSubmit() {
     if (inputValue === "5") {
-      alert("You are an idiot!");
+      alert("Correct!");
+    } else {
+      alert('chupa chups');
     }
   }
 </script>
