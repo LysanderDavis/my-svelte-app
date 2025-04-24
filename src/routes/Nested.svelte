@@ -1,12 +1,5 @@
 <script lang="ts">
-  let name = "Some gigantic, fascinating component";
+  let { answers } = $props()
 </script>
 
-<h1>Hey, I am {name}</h1>
-
-<style>
-  h1 {
-    font-size: 5em;
-    color: blueviolet;
-  }
-</style>
+<p>The answer is { answers }</p>
